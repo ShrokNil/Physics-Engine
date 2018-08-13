@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(PhysicsEngine))]
-public class RocketEngine : MonoBehaviour {
+public class RocketEngine : MonoBehaviour
+{
     public float fuelMass;              // [kg]
     public float maxThrust;             // kN [kg m s^-2]
 
@@ -15,7 +16,8 @@ public class RocketEngine : MonoBehaviour {
     private PhysicsEngine physicsEngine; 
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         physicsEngine = GetComponent<PhysicsEngine>();
         physicsEngine.mass += fuelMass;
     }

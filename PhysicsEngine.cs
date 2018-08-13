@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
  
-public class PhysicsEngine : MonoBehaviour {
+public class PhysicsEngine : MonoBehaviour
+{
     // Types All start uppercase while instances start with lower case letters and have uppercase second words.
     public Vector3 velocityVector;  // m s ^-1
     public Vector3 netForceVector;  // N [kg = m s^-2]
@@ -23,10 +24,11 @@ public class PhysicsEngine : MonoBehaviour {
 
     }
 
-    void FixedUpdate() {
+    void FixedUpdate()
+    {
         RenderTrails();
         CalculateGravity();
-        UpadatePosition();
+        UpdatePosition();
 
     }
 
@@ -43,22 +45,21 @@ public class PhysicsEngine : MonoBehaviour {
                     
                         Debug.Log("Calculating force exerted on " + physicsEngineA.name
                             + " due to the gravity of " + physicsEngineB.name);
-                    float rSquared = Mathf.Pow
+                    float rSquared = Mathf.Pow;
 
                 }
             }
         }
     }
-  
-    
 
-            
-   
-       
-            
-   
-   
-    void UpadatePosition()
+
+
+
+
+
+
+
+    void UpdatePosition()
     {
         //Sum the forces and clear the list
         netForceVector = Vector3.zero;
